@@ -22,6 +22,8 @@ while op != 5:
              vit +=1
          elif vd == 2:
              der +=1
+    elif op == 3:
+        print('1> editar nome\n2> editar estilo de luta\n3>editar cartel')
     elif op == 4:
         print(f'nome:{nome}\neslilo:{estilo}\nidade:{idade}\naltura:{altura}\npeso:{peso}\ncategoria:{categoria}\nvitoria:{vit}\nderrota:{der}')
     elif op == 5:
