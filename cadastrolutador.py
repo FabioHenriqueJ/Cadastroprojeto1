@@ -1,6 +1,6 @@
 op = 0
 es = 0
-vit = 1
+vit = 0
 der = 0
 while op != 5:
     print('========Cadastro de LUTADORES========')
@@ -15,12 +15,14 @@ while op != 5:
         categoria = str(input('categoria '))
 
     elif op == 2:
+         vd = str(input('venceu? (S/sim. N/não')).strip().upper()[0]
          s = 0
          n = 0
-         vd = int(input('venceu? (1/sim. 2/não'))
-         if vd == 1:
+         while vd not in 'S/N':
+          vd = str(input('Somente> S para venceu e N para perdeu')).strip().upper()[0]
+         if vd == 'S':
              vit +=1
-         elif vd == 2:
+         if vd == 'N':
              der +=1
     elif op == 3:
         print('1> editar nome\n2> editar estilo de luta\n3>editar cartel')
